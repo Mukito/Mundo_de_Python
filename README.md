@@ -18,9 +18,10 @@ Python é uma linguagem interpretada, o que significa que o código é executado
 Em Python, você não precisa declarar explicitamente o tipo das variáveis. O tipo é inferido automaticamente durante a execução do programa. Isso facilita a escrita de código, mas também exige que o programador tenha cuidado com a consistência dos dados.
 Exemplo:
 ```
-#### x = 10
-#### x = "Olá"
+x = 10
+x = "Olá"
 ```
+
 # 4. Multiplas Paradigmas
 Python suporta vários paradigmas de programação, incluindo:
 
@@ -56,13 +57,18 @@ Python é multiplataforma, o que significa que programas escritos em Python pode
 Embora Python seja uma linguagem interpretada e, em geral, mais lenta que linguagens compiladas como C ou C++, sua alta produtividade e as bibliotecas otimizadas permitem que ele seja utilizado com sucesso em muitas áreas. Além disso, há maneiras de otimizar o desempenho, como o uso de extensões em C (por exemplo, Cython).
 
 # 10. Exemplo de código simples em Python:
+```
+def saudacao(nome):
+    return f"Olá, {nome}!"
 
-#### def saudacao(nome):
-####    return f"Olá, {nome}!"
+nome_usuario = input("Digite seu nome: ")
+print(saudacao(nome_usuario))
+```
 
-#### nome_usuario = input("Digite seu nome: ")
-#### print(saudacao(nome_usuario))
 Este exemplo pede o nome do usuário e imprime uma saudação personalizada. Como se pode ver, a sintaxe de Python é bastante simples e clara.
 
 # Conclusão
 Python é uma excelente escolha para programadores iniciantes e experientes devido à sua simplicidade, versatilidade e a enorme comunidade que o suporta. Ele é usado em várias indústrias, e suas aplicações estão em constante expansão.
+
+
+

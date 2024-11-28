@@ -4,10 +4,12 @@ Python é uma linguagem de programação de alto nível, muito popular e amplame
 # 1. Sintaxe Simples e Legível
 A sintaxe de Python é intencionalmente simples, o que torna o código mais intuitivo, comparado com outras linguagens de programação. Por exemplo, Python não exige o uso de ponto e vírgula para finalizar as instruções ou chaves para definir blocos de código. Ao invés disso, a indentação (espaços em branco) é usada para definir blocos, o que melhora a legibilidade.
 
-#### if x > 10:
-####   print("Maior que 10")
-#### else:
-####   print("Menor ou igual a 0")
+```
+if x > 10:
+   print("Maior que 10")
+else:
+   print("Menor ou igual a 0")
+```
 
 # 2. Linguagem Interpretada
 Python é uma linguagem interpretada, o que significa que o código é executado diretamente, linha por linha, por um interpretador, sem a necessidade de compilação prévia. Isso facilita o desenvolvimento e a depuração, pois você pode testar e modificar o código rapidamente.

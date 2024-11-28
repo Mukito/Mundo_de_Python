@@ -17,9 +17,10 @@ Python é uma linguagem interpretada, o que significa que o código é executado
 # 3. Tipagem Dinâmica
 Em Python, você não precisa declarar explicitamente o tipo das variáveis. O tipo é inferido automaticamente durante a execução do programa. Isso facilita a escrita de código, mas também exige que o programador tenha cuidado com a consistência dos dados.
 Exemplo:
+```
 #### x = 10
 #### x = "Olá"
-
+```
 # 4. Multiplas Paradigmas
 Python suporta vários paradigmas de programação, incluindo:
 

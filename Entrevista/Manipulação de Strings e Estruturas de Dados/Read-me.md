@@ -1,7 +1,9 @@
 ## 📌 Como inverter uma string em Python?
 Inverter uma string em Python é muito simples! Aqui estão algumas formas de fazer isso. 🚀
 
-####🔹 1. Usando Slicing ([::-1]) ✅ Mais rápido e Pythonico
+## 🔹 1. Usando Slicing ([::-1])
+
+✅ Mais rápido e Pythonico
 A maneira mais eficiente e recomendada:
 
 ```

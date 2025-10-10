@@ -34,3 +34,10 @@ mas são bons o suficiente para serem traduzidos para um idioma que o computador
 |            | 
 | Desvantagens | ❌ O processo de compilação pode ser demorado — é necessário recompilar o código após qualquer alteração antes de executá-lo. | ❌ A execução tende a ser mais lenta, já que o código é interpretado em tempo real e o intérprete consome recursos do computador. |
 |              | ❌ É preciso ter compiladores específicos para cada plataforma de hardware onde se deseja rodar o programa. | ❌ O desenvolvedor e o usuário precisam ter o intérprete instalado para rodar o programa. |
+
+
+
+
+# Python 
+  * é uma **linguagem interpretada** - ele herda todas as vantagens e desvantagens descritas. /obviamente, ele adiciona alguns de susu recursos
+  * Se você quiser programar em Python, precisará do **interpretador Python**. Você não poderá executar seu código sem ele. Felizmente, o Python é gratuito. Essa é uma das vantagens mais importantes.

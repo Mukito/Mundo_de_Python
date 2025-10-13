@@ -54,3 +54,54 @@ Aqui estão algumas dicas que podem ajudá-lo a encontrar e eliminar os bugs. Ne
 3. **Se o bug apareceu recentemente** e não apareceu mais cedo, analise todas as alterações que você introduziu no código - uma delas pode ser a razão.
 4. **Faça uma pausa**, tome um café, leve seu cachorro para passear, leia um bom livro por um momento ou dois, faça uma ligação para seu melhor amigo - você ficará surpreso com a frequência com que ele ajuda.
 5. **Seja otimista**: você encontrará o bug; nós prometemos isso.
+
+
+```
+while True:
+    try:
+        number = int(input("Insira um número inteiro: "))
+        print(number/2)
+        break
+    except:
+        print("Aviso: o valor inserido não é um número válido. Tente novamente...")
+ 
+```
+
+O código acima solicita a entrada do usuário até que ele digite um número inteiro válido. Se o usuário digitar um valor que não pode ser convertido em um int, o programa exibirá `Aviso: o valor inserido não é um número válido. Tente novamente...`, e peça ao usuário para inserir um número novamente. O que acontece nesse caso?
+
+1. O programa entra no loop while.
+2. O bloco `try` é executado. O usuário digita um valor errado, por exemplo: `Olá!`.
+3. Uma exceção ocorre e o restante da cláusula `try` é ignorado. O programa salta para o bloco de `except`, executa-o e, em seguida, continua a executar após o bloco try-except.
+Se o usuário digitar um valor correto e nenhuma exceção ocorrer, as instruções subsequentes no bloco try serão executadas.
+
+4. Você pode lidar com várias exceções no seu bloco de código. Veja os seguintes exemplos:
+
+```
+while True:
+    try:
+        number = int(input("Digite um número int: "))
+        print(5/number)
+        break
+    except ValueError:
+        print("Valor errado.")
+    except ZeroDivisionError:
+        print("Desculpe. Não consigo dividir por zero.")
+    except:
+        print("eu não sei o que fazer...") 
+
+```
+
+```
+try:
+    value = int(input("Entre um valor: "))
+    print(value/value)
+except ValueError:
+    print("Entrada incorreta...")
+except ZeroDivisionError:
+    print("Entrada muito ruim...")
+except:
+    print("Booo!")
+
+
+```
+

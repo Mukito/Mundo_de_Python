@@ -79,3 +79,147 @@ Vamos modificar a função - ela tem dois parâmetros agora:
 def message(what, number):
     print("Entrar", what, "número", number)
 ```
+
+## Funções de Exemplo: avaliando o IMC
+
+imc = (Peso em Kg) / (Altura em Metros) ** 2
+
+```
+def bmi(peso, altura):
+  return altura / peso ** 2
+print(bmi(100, 1.84))
+
+```
+
+### Funções de exemplo: triângulos
+
+2L x B
+```
+def is_a_triangle(a, b, c):
+  if a + b <= c:
+  return False
+  if b + c <= a:
+  return False
+  if c + a <= b:
+  return False
+  return True
+
+print(is_a_triangle(1, 1, 1))
+print(is_a_triangle(1, 1, 3))
+```
+--------------- or --------
+
+```
+def is_a_triangle(a, b, c):
+  if a + b <= or b + c <= a or c + a <= b:
+    return False
+  return True
+
+print(is_a_triangle(1, 1, 1))
+print(is_a_triangle(1, 1, 3))
+
+```
+
+### Teorema Pitágoras
+```
+def is_a_triangle(a, b, c):
+ return a + b > c and b + c > a and c + a > b
+
+
+a = float(input('Digite o primeiro lado\'s comprimento: '))
+b = float(input('Entre no segundo lado\'s comprimento: '))
+c = float(input('Entre no terceiro lado\'s comprimento: '))
+
+if is_a_triangle(a, b, c):
+ print('Sim, pode ser um triângulo.')
+else:
+ print('Não, não pode ser um triângulo.')
+
+```
+
+
+`c² = a² + b²`
+
+**A Hipotenusa e o lado mais longo**.
+
+```
+def is_a_triangle(a, b, c):
+    return a + b > c and b + c > a and c + a > b
+ 
+ 
+def is_a_right_triangle(a, b, c):
+    if not is_a_triangle(a, b, c):
+        return False
+    if c > a and c > b:
+        return c ** 2 == a ** 2 + b ** 2
+    if a > b and a > c:
+    if a > b and a > c:
+        return a ** 2 == b ** 2 + c ** 2
+print(is_a_right_triangle(5, 3, 4))
+print(is_a_right_triangle(1, 3, 4))
+
+
+```
+
+### Factorial
+
+```
+def factorial_function(n):
+  if n < 0:
+    return None
+  if n < 2:
+    return 1
+
+  product = 1
+  for i in range(2, n + 1):
+    product *= i
+  return product
+
+for n in range(1, 6):
+  print(n, factorial_function(n))
+```
+
+### Fibonacci
+```
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+ 
+    elem_1 = elem_2 = 1
+    the_sum = 0
+    for i in range(3, n + 1):
+        the_sum = elem_1 + elem_2
+        elem_1, elem_2 = elem_2, the_sum
+    return the_sum
+ 
+ 
+for n in range(1, 10):  # testando
+    print(n, "->", fib(n))
+
+```
+
+### 2° Versão
+
+```
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+ 
+```
+
+---------------------------------
+```
+def factorial_function(n):
+  if n < 0:
+    return None
+  if n < 2:
+    return 1
+  return n * factorial_function(n-1)
+
+```
+

@@ -34,3 +34,13 @@ print(phone_numbers)
 print(empty_dictionary)
 
 ```
+
+As tuplas são ordenadas e coleções imutáveis (imutáveis) de dados. Eles podem ser vistos como listas imutáveis. Eles estão escritos entre colchetes:
+```
+my_tuple = (1, 2, True, "um barbante", (3, 4), [5, 6], None)
+print(my_tuple)
+ 
+my_list = [1, 2, True, "um barbante", (3, 4), [5, 6], None]
+print(my_list)
+ 
+```

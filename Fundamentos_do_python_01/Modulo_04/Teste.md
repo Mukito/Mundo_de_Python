@@ -45,3 +45,12 @@ Por favor, não use palavras obscenas ou indecentes para esse fim, mesmo que voc
 Como você pode ver, esse tipo de depuração não é realmente interativo, ou é apenas em pequena medida, quando você decide aplicar a função `input()` para interromper ou atrasar a execução do código.
 
 Depois que os bugs forem encontrados e removidos, as impressões adicionais poderão ser comentadas ou removidas. Não deixe que eles sejam executados no código final, pois eles podem confundir testadores e usuários e causar um grande carma.
+
+### Algumas dicas úteis
+Aqui estão algumas dicas que podem ajudá-lo a encontrar e eliminar os bugs. Nenhum deles é definitivo ou definitivo. Use-os com flexibilidade e confie na sua intuição. Não acredite em si mesmo - verifique tudo duas vezes.
+
+1. **Tente dizer a alguém** (por exemplo, seu amigo ou colega de trabalho) o que seu código deve fazer e como ele se comporta de verdade. Seja concreto e não omita detalhes. Responda a todas as perguntas que seu ajudante fizer. Você provavelmente perceberá a causa do problema enquanto conta a história, pois a fala ativa essas partes do cérebro que permanecem ociosas durante a codificação. Se nenhum ser humano puder ajudá-lo com o problema, use um patinho de borracha amarelo. Não estamos de brincadeira - consulte o artigo da Wikipedia para saber mais sobre essa técnica usada: debugging pato de borracha.
+2. **Tente Isolar o problema**. Você pode extrair a parte do código que é suspeita de ser responsável por seus problemas e executá-la separadamente. Você pode comentar partes do código que ocultam o problema. Atribua valores concretos às variáveis em vez de lê-los da entrada. Teste suas funções aplicando valores de argumento previsíveis. Analise o código com cuidado. Leia em voz alta.
+3. **Se o bug apareceu recentemente** e não apareceu mais cedo, analise todas as alterações que você introduziu no código - uma delas pode ser a razão.
+4. **Faça uma pausa**, tome um café, leve seu cachorro para passear, leia um bom livro por um momento ou dois, faça uma ligação para seu melhor amigo - você ficará surpreso com a frequência com que ele ajuda.
+5. **Seja otimista**: você encontrará o bug; nós prometemos isso.

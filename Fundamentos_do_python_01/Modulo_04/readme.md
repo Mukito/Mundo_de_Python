@@ -62,3 +62,20 @@ hello(name)    # chamando a função
  
 ```
  
+## Funções parametrizadas
+
+O poder total da função se revela quando pode ser equipado com uma interface capaz de aceitar dados fornecidos pelo invocador. 
+Esses dados podem modificar o comportamento da função, tornando-a mais flexível e adaptável às condições variáveis.
+
+Um parâmetro é na verdade uma variável, mas há dois fatores importantes que tornam os parâmetros diferentes e especiais:
+
+ * **parâmetros existem apenas dentro de funções nas quais eles foram definidos**, e o único lugar onde o parâmetro pode ser definido é um espaço entre um par de parênteses na declaração def;
+ * **a atribuição de um valor ao parâmetro é feita no momento da chamada da função**, especificando o argumento correspondente.
+
+Uma função pode ter quantos parâmetros você quiser, mas quanto mais parâmetros tiver, mais difícil será memorizar suas funções e propósitos.
+
+Vamos modificar a função - ela tem dois parâmetros agora:
+```
+def message(what, number):
+    print("Entrar", what, "número", number)
+```

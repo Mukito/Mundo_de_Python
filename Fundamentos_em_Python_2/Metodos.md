@@ -1,5 +1,35 @@
 # Métodos de Strings
 
+### RESUMO DA SEÇÃO
+1. Alguns dos métodos oferecidos por strings são:
+
+`capitalize()` – altera todas as letras da string para maiúsculas; <br>
+`center()` – centraliza a string no campo de um comprimento conhecido; <br>
+`count()` – conta as ocorrências de um determinado caractere; <br>
+`join()` – une todos os itens de uma tupla/lista em uma string; <br>
+`lower()` – converte todas as letras da string para minúsculas; <br>
+`lstrip()` – remove os caracteres em branco do início da string; <br>
+`replace()` – substitui uma determinada substring com outra; <br>
+`rfind()` – encontra uma substring a partir do fim da string; <br>
+`rstrip()` – remove os espaços em branco do final da string; <br>
+`split()` – divide a string em uma substring usando um delimitador específico; <br>
+`strip()` – remove os espaços em branco iniciais e finais; <br>
+`swapcase()` – transforma as letras maiúsculas em minúsculas e vice-versa <br>
+`title()` – transforma a primeira letra de cada palavra em maiúscula; <br>
+`upper()` – converte todas as letras de uma string em maiúsculas.<br>
+
+2. O conteúdo da string pode ser determinado por meio dos métodos a seguir (todos retornam valores Booleanos):
+
+`endswith()` – a string termina com uma determinada substring? <br>
+`isalnum()` – a string é composta apenas por letras e dígitos? <br>
+`isalpha()` – a string é composta apenas por letras? <br>
+`islower()` – a string é composta somente por letras minúsculas?<br>
+`isspace()` – a string é composta apenas por espaços em branco? <br>
+`isupper()` – a string é composta apenas por letras maiúsculas? <br>
+`startswith()` – a string começa com uma substring específica? <br>
+
+
+
 ### Método capitalize()
 Cria uma nova string com caracteres retirados da string de origem.
   * Se o primeiro caractere dentro da string for uma letra (observação: se o primeiro caractere for um elemento com índice igual a 0, não apenas o primeiro caractere visível), ele será convertido para maiúscula;
@@ -169,6 +199,105 @@ A variante de três parâmetros de `replace()` usa o terceiro argumento (um núm
 print("This is it!".replace("is", "are", 1))
 print("This is it!".replace("is", "are", 2))
 ```
+
+### Método rfind()
+Iniciam suas buscas a partir do fim da string e não do início (daí o prefixo r, de *right* (direita, em inglês).
+Observe o código de exemplo no editor e tente prever o resultado. Execute o código para confirmar se estava certo.
+```
+# Demonstrando o método rfind():
+print("tau tau tau".rfind("ta"))
+print("tau tau tau".rfind("ta", 9))
+print("tau tau tau".rfind("ta", 3, 9))
+```
+
+### Método rstrip()
+Fazem praticamente o mesmo de lstrips, mas afetam o lado oposto da string.
+Observe o código de exemplo no editor. Você sabe dizer qual será o resultado? Execute o código para confirmar sua previsão.
+
+```
+# Demonstrando o método rstrip():
+print("[" + " upsilon ".rstrip() + "]")
+print("cisco.com".rstrip(".com"))
+```
+
+### Método split()
+Divide a string e cria uma lista de todas as substrings detectadas.
+O método presume que as substrings estão delimitadas por espaços em branco; os espaços não fazem parte da operação e não são copiados na lista resultante.
+
+```
+# Demonstrando o método split():
+print("phi       chi\npsi".split())
+```
+
+### Método startswith() 
+É um espelho de `endswith()` pois verifica se uma determinada string começa com a substring especificada.
+
+Observe o exemplo no editor:
+```
+# Demonstrando o método startswith():
+print("omega".startswith("meg"))
+print("omega".startswith("om"))
+
+print()
+
+```
+
+### Método strip()
+Combina o efeito causado por `rstrip()` e `lstrip()` criando uma nova string sem os espaços em branco iniciais e finais.
+
+Observe o segundo exemplo no editor:
+```
+# Demonstrando o método strip():
+print("[" + "   aleph   ".strip() + "]")
+```
+
+
+### Método swapcase()
+cria uma nova string ao inverter as letras maiúsculas para minúsculas e vice-versa.
+Todos os outros caracteres permanecem inalterados.
+
+Observe o primeiro exemplo no editor:
+
+```
+# Demonstrando o método swapcase():
+print("I know that I know nothing.".swapcase())
+
+print()
+```
+
+
+### Método title()
+realiza uma função ligeiramente similar, ele transforma a primeira letra de cada palavra em maiúscula e todas as outras letras em minúsculas.
+
+Observe o exemplo no editor:
+```
+# Demonstrando o método title():
+print("I know that I know nothing. Part 1.".title())
+
+print()
+```
+
+
+
+### Método upper()
+Cria uma cópia da string de origem, substitui todas as letras minúsculas com suas equivalentes maiúsculas e retorna a string como resultado.
+
+Observe o exemplo no editor:
+```
+# Demonstrando o método upper():
+print("I know that I know nothing. Part 2.".upper())
+
+```
+
+
+
+
+
+
+
+
+
+
 
 
 

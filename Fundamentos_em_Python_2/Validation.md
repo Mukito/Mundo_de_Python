@@ -8,9 +8,6 @@ Um dos algoritmos usados para realizar essa comparação para o idioma inglês �
 
 
 
-
-
-
 ## Cifra de César
 A cifra de César original troca os caracteres um a um: a se torna b, z se torna a e assim por diante. Vamos torná-lo um pouco mais complexo e permitir o valor alterado esteja no intervalo 1..25, inclusive.
 
@@ -23,8 +20,8 @@ Sua tarefa é criar um programa que:
   * mostra o texto codificado.
 
 
-+-----------+------------+
-|  Entrada  |  Saida  |
-+-----------+------------+
+|     Entrada     |     Saida     |
+|-----------------|---------------|
 | abcxyzABCxyz 123 | cdezabCDEzab 123 |
-|                  |                  |
+| The die is cast 25 | Sgd chd hr bzrs |
+                                    

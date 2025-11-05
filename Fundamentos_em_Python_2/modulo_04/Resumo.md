@@ -1,3 +1,7 @@
+
+<img width="791" height="282" alt="image" src="https://github.com/user-attachments/assets/680a6860-fbfa-4870-9451-9b2dd30a74b2" />
+
+
 ## RESUMO DA SEÇÃO
 1. Um arquivo precisa ser **aberto** antes de poder ser processado por um programa e ele deve ser **fechado** quando o processamento for concluído.
 

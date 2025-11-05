@@ -50,3 +50,44 @@ O programa produz o seguinte resultado:
 1 1
 4 4
 ```
+
+# Abrindo os fluxos
+```
+stream = open(file, mode = 'r', encoding = None)
+```
+
+Vamos analisá-lo:
+
+    * o nome da função (`open`) fala por si só; se a abertura for bem-sucedida, a função retorna um objeto do fluxo, caso contrário, será gerada uma exceção (por ex., FileNotFoundError se o arquivo que você for ler não existir);
+    * o primeiro parâmetro da função (`file`) especifica o nome do arquivo que será associado ao fluxo;
+    * o segundo parâmetro (`mode`) especifica o modo de abertura usado para o fluxo; é uma string preenchida com uma sequência de caracteres e cada um deles possui seu próprio significado especial (mais detalhes em breve);
+    * o terceiro parâmetro (`encoding`) especifica o tipo de codificação (ou seja, UTF-8 quando estiver trabalhando com arquivos de texto)
+    * a abertura deve ser a primeira operação realizada no fluxo.
+    
+Observação: é possível omitir os argumentos mode e encoding, caso isso aconteça seus valores serão presumidos. O modo de abertura padrão é lido no modo texto, enquanto a codificação padrão depende da plataforma usada.
+
+Vamos apresentar os modos de abertura mais úteis e importantes. Preparado?
+
+### Abrindo os fluxos: modos
+`r` modo aberto: leitura <br>
+ * o fluxo será aberto no modo de leitura;
+ * o arquivo associado ao fluxo deve existir e deve ser legível, caso contrário, a função open() gerará uma exceção.
+
+`w` modo aberto: gravação
+ * o fluxo será aberto no modo de gravação;
+ * o arquivo associado ao fluxo não precisa existir; se não existir, será criado; se existir, será truncado para o comprimento zero (apagado); se a criação não for possível (por exemplo, devido a permissões do sistema), a função open() gerará uma exceção.
+
+`a` modo aberto: anexação
+ * o fluxo será aberto no modo de anexação;
+ * o arquivo associado ao fluxo não precisa existir; se não existir, será criado; se existir, o cabeçote de gravação virtual será definido no final do arquivo (o conteúdo anterior do arquivo permanece inalterado).
+
+`r+` modo aberto: leitura e atualização
+ * o fluxo será aberto no modo de leitura e atualização;
+ * o arquivo associado ao fluxo deve existir e deve ser gravável, caso contrário, a função open() gerará uma exceção;
+ * operações de leitura e gravação são permitidas para o fluxo.
+
+`w+` modo aberto: gravação e atualização
+ * o fluxo será aberto no modo de gravação e atualização;
+ * o arquivo associado ao fluxo não precisa existir; se não existir, será criado; o conteúdo anterior do arquivo permanece inalterado;.
+ * operações de leitura e gravação são permitidas para o fluxo.
+

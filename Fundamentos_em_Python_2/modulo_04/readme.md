@@ -36,11 +36,10 @@ for a in range(-2, 3):
     print(sqr(a), end=" ")
     print(pwr(a, two()))
 ```
-Vamos analisá-lo:
-
-  * a primeira `lambda` é uma **função sem parâmetros** e anônima que sempre retorna `2`. Como **atribuímos a ela uma variável chamada** `two`, podemos dizer que a função não é mais anônima e podemos usar o nome para chamá-la.
-  * a segunda é uma **função anônima com um parâmetro** que retorna o valor de seu argumento ao quadrado. Nós também a nomeamos como tal.
-  * a terceira `lambda` **recebe dois parâmetros** e retorna o valor da primeira, elevada à potência da segunda. O nome da variável que carrega o `lambda` fala por si só. Não usamos pow para evitar a confusão com a função integrada do mesmo nome e com o mesmo propósito.
+Vamos analisá-lo:<br>
+ * a primeira `lambda` é uma **função sem parâmetros** e anônima que sempre retorna `2`. Como **atribuímos a ela uma variável chamada** `two`, podemos dizer que a função não é mais anônima e podemos usar o nome para chamá-la.
+ * a segunda é uma **função anônima com um parâmetro** que retorna o valor de seu argumento ao quadrado. Nós também a nomeamos como tal.
+ * a terceira `lambda` **recebe dois parâmetros** e retorna o valor da primeira, elevada à potência da segunda. O nome da variável que carrega o `lambda` fala por si só. Não usamos pow para evitar a confusão com a função integrada do mesmo nome e com o mesmo propósito.
 
 O programa produz o seguinte resultado:
 ```
@@ -56,13 +55,12 @@ O programa produz o seguinte resultado:
 stream = open(file, mode = 'r', encoding = None)
 ```
 
-Vamos analisá-lo:
-
-    * o nome da função (`open`) fala por si só; se a abertura for bem-sucedida, a função retorna um objeto do fluxo, caso contrário, será gerada uma exceção (por ex., FileNotFoundError se o arquivo que você for ler não existir);
-    * o primeiro parâmetro da função (`file`) especifica o nome do arquivo que será associado ao fluxo;
-    * o segundo parâmetro (`mode`) especifica o modo de abertura usado para o fluxo; é uma string preenchida com uma sequência de caracteres e cada um deles possui seu próprio significado especial (mais detalhes em breve);
-    * o terceiro parâmetro (`encoding`) especifica o tipo de codificação (ou seja, UTF-8 quando estiver trabalhando com arquivos de texto)
-    * a abertura deve ser a primeira operação realizada no fluxo.
+Vamos analisá-lo:<br>
+ * o nome da função (`open`) fala por si só; se a abertura for bem-sucedida, a função retorna um objeto do fluxo, caso contrário, será gerada uma exceção (por ex., *FileNotFoundError* **se o arquivo que você for ler não existir**);
+ * o primeiro parâmetro da função (`file`) especifica o nome do arquivo que será associado ao fluxo;
+ * o segundo parâmetro (`mode`) especifica o modo de abertura usado para o fluxo; é uma string preenchida com uma sequência de caracteres e cada um deles possui seu próprio significado especial (mais detalhes em breve);
+ * o terceiro parâmetro (`encoding`) especifica o tipo de codificação (ou seja, UTF-8 quando estiver trabalhando com arquivos de texto)
+ * a abertura deve ser a primeira operação realizada no fluxo.
     
 Observação: é possível omitir os argumentos mode e encoding, caso isso aconteça seus valores serão presumidos. O modo de abertura padrão é lido no modo texto, enquanto a codificação padrão depende da plataforma usada.
 

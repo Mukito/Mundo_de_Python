@@ -2,6 +2,9 @@
 Python é uma linguagem de programação de alto nível, muito popular e amplamente utilizada por sua simplicidade e legibilidade. Ela foi criada por Guido van Rossum e lançada pela primeira vez em 1991. O design de Python se destaca pela clareza e pela filosofia de que o código deve ser fácil de ler e entender, facilitando a manutenção e colaboração em projetos de software.
 
 ### Indice
+
+https://flet-controls-gallery.fly.dev/input/checkbox
+
 https://docs.python.org/pt-br/3.13/py-modindex.html
 
 # 1. Sintaxe Simples e Legível

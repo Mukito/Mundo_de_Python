@@ -1,3 +1,7 @@
+<img width="502" height="751" alt="image" src="https://github.com/user-attachments/assets/5515624d-ba25-4d6d-8918-77e1d6f8c835" />
+
+
+
 # Mundo_de_Python
 Python é uma linguagem de programação de alto nível, muito popular e amplamente utilizada por sua simplicidade e legibilidade. Ela foi criada por Guido van Rossum e lançada pela primeira vez em 1991. O design de Python se destaca pela clareza e pela filosofia de que o código deve ser fácil de ler e entender, facilitando a manutenção e colaboração em projetos de software.
 

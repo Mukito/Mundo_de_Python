@@ -81,4 +81,13 @@ Este exemplo pede o nome do usuário e imprime uma saudação personalizada. Com
 Python é uma excelente escolha para programadores iniciantes e experientes devido à sua simplicidade, versatilidade e a enorme comunidade que o suporta. Ele é usado em várias indústrias, e suas aplicações estão em constante expansão.
 
 
+=====
+
+
+# Curso Python e SQL
+https://www.codedex.io/courses
+
+
+
+
 

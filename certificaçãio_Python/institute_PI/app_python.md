@@ -11,3 +11,15 @@ E quanto aos grandes sites e serviços? Dropbox? Uber? Spotify? Pinterest? BuzzF
   * Aplicações de Escritório (calibre, faces, Notalon, pyspread)
   * Gerenciadores de Informações Pessoais (BitPim, Narval, Prioritise, Task Coach, WikidPad)
 (Fonte: https://wiki.python.org/moin/PythonProjects)
+
+
+## De modo geral, o Python é uma excelente escolha para:
+
+ * Desenvolvimento web e para a Internet (por exemplo, frameworks como Django e Pyramid; micro-frameworks como Flask e Bottle)
+ * Computação científica e numérica (por exemplo, SciPy — uma coleção de pacotes para matemática, ciência e engenharia; IPython — um shell interativo que permite editar e registrar sessões de trabalho)
+ * Educação (é uma linguagem excelente para ensinar programação! E é por isso que estamos oferecendo este curso a você!)
+ * Interfaces gráficas (GUIs) para desktop (por exemplo, wxWidgets, Kivy, Qt)
+ * Desenvolvimento de software (controle de build, gerenciamento e testes — Scons, Buildbot, Apache Gump, Roundup, Trac)
+ * Aplicações empresariais (sistemas ERP e de e-commerce — Odoo, Tryton)
+(Fonte: https://www.python.org/about/apps)
+E muitos, muitos outros projetos e ferramentas de desenvolvimento.

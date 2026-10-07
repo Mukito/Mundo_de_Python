@@ -88,6 +88,12 @@ Python é uma excelente escolha para programadores iniciantes e experientes devi
 https://www.codedex.io/courses
 
 
+# Termos
+
+https://peps.python.org/pep-0008/
 
 
 
+
+
+# Termossss
